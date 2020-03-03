@@ -23,6 +23,7 @@
 |name|string|null: false|
 ### Association
 - has_many :users, through: :groupes_users
+- has_many :chats
 
 ## chatsテーブル
 |Column|Type|Options|
@@ -32,4 +33,5 @@
 |image|string||
 |text|text||
 ### Association
-belongs_to :user
+- belongs_to :user
+- belongs_to :group
