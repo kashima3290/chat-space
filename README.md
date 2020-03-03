@@ -14,16 +14,18 @@
 |email|text|null: false|
 |password|text|null: false|
 ### Association
-- has_many :groups, through: :groupes_users
+- has_many :groups, through: :groups_users
 - has_many :chats
+- has_many :groups_users
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 ### Association
-- has_many :users, through: :groupes_users
+- has_many :users, through: :groups_users
 - has_many :chats
+- has_many :groups_users
 
 ## chatsテーブル
 |Column|Type|Options|
