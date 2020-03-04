@@ -1,0 +1,24 @@
+%div.main
+  %div.main__header
+    %div.main__header--left
+      %p.group-name test
+      %p.member-name Member:masa
+    = link_to "#", class: "main__header--right" do
+      %div.edit-btn edit
+  %div.main__messages
+    %div.main__messages--messenger
+      %h3.name masa
+      %p.date 2019/11/20(Wed) 17:43:01
+    %p.text おはよう！
+    %div.main__messages--messenger
+      %h3.name masa
+      %p.date 2019/11/20(Wed) 17:43:34
+    %p.text 今日は夜から雨
+  %div.main__footer
+    %div.main__footer--box
+      %div.left-box
+        %input.form-text{:type => "text", :placeholder => "type a message"}
+        %label{class: "input-box__image"} 
+          = icon('fas', 'image')
+          %input{type: "file", class: "fail"}
+      %input.form-btn{:name => "commit", :type => "submit", :value => "send"}

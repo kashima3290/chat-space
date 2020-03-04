@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+}
+
+.side {
+  width: 300px;
+  background-color: #253142;
+  padding: 0 20px;
+  &__header {
+    height: 100px;
+    background-color:#253141;
+    &--box {
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .user__name {
+        font-size: 16px;
+        line-height: 100px;
+      }
+      .menu{
+        line-height: 100px;
+        display: flex;
+        width: 60px;
+        color: #ffffff;
+        .far{
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  &__group {
+    color: #ffffff;
+    &--name{
+      font-size: 15px;
+      margin: 20px 0 5px 0;
+    }
+    &--notification{
+      font-size: 11px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.main {
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  &__header {
+    height: 100px;
+    background-color: #ffffff;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    &--left {
+      margin-top: 35px;
+      .group-name {
+        color: #333333;
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      .member-name {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    &--right {
+      border-radius: solid 1px;
+      text-decoration: none;
+      .edit-btn {
+        border: solid 1px;
+        color: #38aef0;
+        font-size: 16px;
+        padding: 0 20px;
+        margin-top: 28px;
+        height: 40px;
+        width: 72px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &__messages {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    padding: 35px 40px 0 40px;
+    &--messenger {
+      display: flex;
+      justify-content: space-between;
+      .name {
+        color: #333333;
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      .date {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    .text {
+      color: #434A54;
+      font-size: 14px;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__footer {
+    height: 90px;
+    width: 100%;
+    background-color: #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--box {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 40px;
+      line-height: 50px;
+      width: 100%;
+      .left-box{
+        position: relative;
+        width: 100%;
+        .form-text {
+          padding-left: 10px;
+          border: none;
+          height: 50px;
+          width: 100%;
+        }
+        .input-box__image{
+          position: absolute;
+          right: 10px;
+          .fail {
+            display: none;
+          }
+        }
+      }
+      .form-btn {
+        background-color: #38aef0;
+        margin-left: 15px;
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
+}
+
