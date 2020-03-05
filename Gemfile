@@ -56,6 +56,7 @@ gem 'devise'
 gem "haml-rails"
 gem "font-awesome-sass"
 gem 'devise'
+gem 'pry-rails'
 
 group :development do 
      gem 'rspec'
