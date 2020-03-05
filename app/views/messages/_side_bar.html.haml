@@ -5,14 +5,11 @@
         = current_user.name
       %ul.menu
         %li.list
-          = link_to do
+          = link_to new_group_path do
             = icon('fas', 'pen-square')
         %li.list
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
-    .side__group
-      %p.side__group--name techcamp
-      %p.side__group--notification まだメッセージがありません
     .side__group-list
       - current_user.groups.each do |group|
         .group
@@ -21,4 +18,3 @@
               =group.name
             .group-message
               メッセージはまだありません。
-              -# = link_to new_group_path(current_user) do
