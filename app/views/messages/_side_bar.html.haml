@@ -5,7 +5,7 @@
         = current_user.name
       %ul.menu
         %li.list
-          = link_to new_group_path(current_user) do
+          = link_to do
             = icon('fas', 'pen-square')
         %li.list
           = link_to edit_user_path(current_user) do
@@ -21,3 +21,4 @@
               =group.name
             .group-message
               メッセージはまだありません。
+              -# = link_to new_group_path(current_user) do
