@@ -13,13 +13,12 @@
     .side__group
       %p.side__group--name techcamp
       %p.side__group--notification まだメッセージがありません
-
-      -# %h3.user__name
-      -#   = current_user.name
-      -# %ul.menu
-      -#   %li.list
-      -#     = link_to do
-      -#       = icon('fas', 'pen-square')
-      -#   %li.list
-      -#     = link_to edit_user_path(current_user) do
-      -#       = icon('fas', 'cog')
+    .side__group-list
+      - current_user.groups.each do |group|
+        .group
+          = link_to '#', class: "group--box" do
+            .group-name
+              =group.name
+            .group-message
+              メッセージはまだありません。
+              -# = link_to new_group_path(current_user) do

@@ -38,15 +38,20 @@ body {
       }
     }
   }
-  &__group {
-    color: #ffffff;
-    &--name{
-      font-size: 15px;
-      margin: 20px 0 5px 0;
-    }
-    &--notification{
-      font-size: 11px;
-      margin-bottom: 40px;
+  &__group-list {
+    .group {
+      &--box{
+        color: #ffffff;
+        text-decoration: none;
+        .group-name {
+          font-size: 15px;
+          margin: 20px 0 5px 0;
+        }
+        .group-message {
+          font-size: 11px;
+          margin-bottom: 40px;
+        }
+      }
     }
   }
 }
