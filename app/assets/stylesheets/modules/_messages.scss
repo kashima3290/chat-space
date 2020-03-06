@@ -122,32 +122,31 @@ body {
     width: 100%;
     background-color: #d2d2d2;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     &--box {
+      margin: 0 40px;
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      margin: 0 40px;
-      line-height: 50px;
       width: 100%;
-      .left-box{
+      .left-box {
         position: relative;
         width: 100%;
-        .form-text {
+         .form-text {
+          width: 80%;
           padding-left: 10px;
           border: none;
           height: 50px;
-          width: 100%;
-        }
+         }
         .input-box__image{
-          position: absolute;
-          right: 10px;
-          .fail {
+          // position: absolute;
+          // right: 130px;
+          .file {
             display: none;
           }
         }
       }
       .form-btn {
+        height: 50px;
         background-color: #38aef0;
         margin-left: 15px;
         width: 100px;
