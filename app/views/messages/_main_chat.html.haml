@@ -1,24 +1,20 @@
 .main
   .main__header
     .main__header--left
-      %p.group-name test
-      %p.member-name Member:masa
-    = link_to "#", class: "main__header--right" do
+      %p.group-name
+        = @group.name
+      %p.member-name 
+        - @group.users.each do |user|
+          = user.name
+    = link_to edit_group_path(@group), class: "main__header--right" do
       .edit-btn edit
   .main__messages
-    .main__messages--messenger
-      %h3.name masa
-      %p.date 2019/11/20(Wed) 17:43:01
-    %p.text おはよう！
-    .main__messages--messenger
-      %h3.name masa
-      %p.date 2019/11/20(Wed) 17:43:34
-    %p.text 今日は夜から雨
+    = render @messages
   .main__footer
     .main__footer--box
-      .left-box
-        %input.form-text{type:"text", placeholder: "type a message"}
-        %label{class: "input-box__image"} 
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form-text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
           = icon('fas', 'image')
-          %input{type: "file", class: "fail"}
-      %input.form-btn{name: "commit", type: "submit", value: "send"}
+          = f.file_field :image, class: 'file'
+        = f.submit 'Send', class: 'form-btn'
