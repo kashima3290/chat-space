@@ -42,6 +42,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'faker'
   gem 'byebug', platform: :mri
+  gem 'capybara'
 end
 
 group :development do
