@@ -64,6 +64,7 @@ gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rspec-rails'
+gem 'rails-i18n'
 
 group :development do 
   gem 'web-console'
