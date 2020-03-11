@@ -11,11 +11,12 @@ body {
 
 .side {
   width: 300px;
-  background-color: #253142;
-  padding: 0 20px;
+  background-color: #2f3e51;
   &__header {
+    padding: 0 20px;
     height: 100px;
     background-color:#253141;
+    width: 100%;
     &--box {
       color: #ffffff;
       display: flex;
@@ -58,8 +59,8 @@ body {
 
 .main {
   width: calc(100vw - 300px);
-  background-color: #ffffff;
   &__header {
+    border-bottom: 1px solid #eeeeee;
     height: 100px;
     background-color: #ffffff;
     padding: 0 40px;
@@ -100,15 +101,16 @@ body {
     padding: 35px 40px 0 40px;
     &--messenger {
       display: flex;
-      justify-content: space-between;
       .name {
         color: #333333;
         font-size: 16px;
         margin-bottom: 12px;
+        font-weight: bold;
       }
       .date {
         color: #999999;
         font-size: 12px;
+        margin-left: 10px;
       }
     }
     .text {
@@ -144,16 +146,19 @@ body {
             position: absolute;
             right: 130px;
             top: 10px;
+            font-size: 1.3rem;
             .file {
               display: none;
             }
           }
           .form-btn {
+            color: white;
             height: 50px;
             background-color: #38aef0;
             margin-left: 15px;
             width: 100px;
             text-align: center;
+            cursor: pointer;
           }
       }
     }
