@@ -68,6 +68,7 @@ gem "font-awesome-sass"
 gem 'devise'
 gem 'pry-rails'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'spring'
 gem 'mini_magick'
 gem 'rspec-rails'
