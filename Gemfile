@@ -43,6 +43,11 @@ group :development, :test do
   gem 'faker'
   gem 'byebug', platform: :mri
   gem 'capybara'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 
 group :development do
@@ -63,6 +68,7 @@ gem "font-awesome-sass"
 gem 'devise'
 gem 'pry-rails'
 gem 'carrierwave'
+gem 'spring'
 gem 'mini_magick'
 gem 'rspec-rails'
 gem 'rails-i18n'
