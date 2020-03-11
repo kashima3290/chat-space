@@ -3,9 +3,11 @@
     .main__header--left
       %p.group-name
         = @group.name
-      %p.member-name 
-        - @group.users.each do |user|
-          = user.name
+      .member-name
+        %p Member：
+        %p 
+          - @group.users.each do |user|
+            = user.name
     = link_to edit_group_path(@group), class: "main__header--right" do
       .edit-btn edit
   .main__messages
